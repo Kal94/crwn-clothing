@@ -1,5 +1,4 @@
 import { createSelector } from 'reselect';
-import { createRef } from 'react';
 
 const selectCart = state => state.cart;
 
