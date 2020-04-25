@@ -5,6 +5,8 @@ import { connect} from 'react-redux';
 import CollectionsOverviewContainer from '../../components/collections-overview/collections-overview.container';
 import CollectionPageContainer from "../collection/collection.container";
 
+import { ShopPageContainer } from './shop.styles';
+
 import { fetchCollectionsStart } from '../../redux/shop/shop.actions';
 
 const ShopPage = ({ fetchCollectionsStart, match }) => {
@@ -14,10 +16,10 @@ const ShopPage = ({ fetchCollectionsStart, match }) => {
   }, [fetchCollectionsStart])
 
   return (
-    <div className='shop-page'>
+    <ShopPageContainer>
       <Route exact path={`${match.path}`} component={CollectionsOverviewContainer} />
       <Route path={`${match.path}/:collectionId`} component={CollectionPageContainer} />
-    </div>
+    </ShopPageContainer>
   );
 }
 
