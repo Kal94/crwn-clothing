@@ -64,9 +64,9 @@ export const BackgroundImage = styled.div`
 BackgroundImage.displayName = 'BackgroundImage';
 
 export const CollectionFooterContainer = styled.div`
-  width: 100%;
+  text-align: center;
   height: 5%;
-  display: flex;
+  display: block;
   justify-content: space-between;
   font-size: 18px;
 `;
